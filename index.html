@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta author="Michal H. Kolář">
+
+	<title>
+        Atomistic computer simulations of the ribosome
+    </title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.mhk.css" id="theme">
+
+</head>
+	<body>
+        <div class="reveal">
+	        <div class="slides">
+<!--
+============ SLIDES START HERE ============
+-->
+
+
+
+<section style="text-align: left">
+    <h1 style="margin-top:1em">
+        Atomistic computer simulations of the ribosome
+    </h1>
+    <div class="leftcol" style="width:50%">
+        <h3 style="margin-top: 2em; margin-bottom: 2em">Michal H. Kolář</h3>
+        <h4><a href="http://mhko.science/contact" target="_blank">http://mhko.science/contact</a></h4>
+        <h4><a href="http://mhko.science/jh-inst-2023" target="_blank">http://mhko.science/cssb-2023</a></h4>
+    </div>
+    <div class="rightcol" style="width:48%">
+        <video width="100%" nocontrols autoplay loop style="margin-top:-3em">
+          <source data-src="./media/ribosome.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+
+<section>
+    <div style="width: 100%">
+        <img src="./media/team.jpg">
+        <div style="padding: 1em; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center">
+            <img src="./media/logos/vscht.png" style="height: 60px;">
+            <img src="./media/logos/gacr.png" style="height: 70px;">
+            <img src="./media/logos/czexpats.png" style="height: 90px;">
+            <img src="./media/logos/it4i.png" style="height: 55px;">
+            <img src="./media/logos/mpcdf.png" style="height: 55px;">
+        </div>
+    </div>
+</section>
+
+
+<!--section style="text-align: left">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom:2em">
+        <img src="./media/logos/mpinat.png" style="height:70px">
+        <h4>Helmut Grubmüller group</h4>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom:2em">
+        <img src="./media/logos/ostrava-uni.png" style="height:60px"><br>
+        <h4>Marek Eliáš group</h4>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <img src="./media/logos/biocev.png" style="height:70px">
+        <img src="./media/logos/prfuk.png" style="height:70px">
+        <h4>Klára Hlouchová group</h4>
+    </div>
+</section-->
+
+
+
+<section>
+    <img src="./media/reaction/reaction.png" style="margin-top:1em; width: 70%">
+</section>
+
+
+<section>
+    <img src="./media/translation-scheme/scheme-1.png" style="width:70%">
+</section>
+
+
+<section data-background-video="./media/ribosome-intro.mp4"
+         data-background-video-loop="true"
+         data-background-color="white"
+         data-background-size="contain">
+    &nbsp;
+</section>
+
+
+
+<section>
+    <div class="leftcol">
+        <img src="media/bohr.jpg">
+    </div>
+    <div class="rightcol">
+        <h2 style="margin-top:3em">&bdquo;Prediction is very difficult, especially if it’s about the future.&ldquo;</h2>
+    </div>
+</section>
+
+
+<section data-background-image="./media/zamek.jpg"
+         data-background-size="cover">
+    a simple example
+</section>
+
+
+<section>
+    <div class="leftcol">
+        <div class="r-stack">
+            <img src="./media/molecule/molecule-0.png" style="width:85%">
+            <img src="./media/molecule/molecule-1.png" style="width:85%" class="fragment">
+            <img src="./media/molecule/molecule-2.png" style="width:85%" class="fragment">
+            <img src="./media/molecule/molecule-3.png" style="width:85%" class="fragment">
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <blockquote style="margin-top:5em; border: 2px solid silver; padding: 1em">
+        Numerical integration of Newton's equations of motion using
+        an empirical all-atom potential.
+    </blockquote>
+</section>
+
+
+<section>
+    <img src="./media/simulations/simulations.png" style="margin-top: 4em">
+</section>
+
+
+<section>
+    <h3>Three challenges for MD simulations</h3>
+    <img src="./media/cross-section/cross-section.png" style="width:80%">
+</section>
+
+
+
+<section style="text-align: left">
+    <div class="leftcol" style="width:40%">
+        <img src="./media/vemp/vemp.png">
+    </div>
+    <div class="rightcol" style="width: 58%">
+        <h4 style="margin-top: 0.5em">Co-translational folding of VemP</h4>
+        <p>
+            H. Grubmüller group (MPI-NAT Göttingen)<br>
+            S. M. Vaiana group (Arizona State Uni)
+        </p>
+        <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/35150281" target="_blank">PMID: 35150281</a>
+        </p>
+
+        <div style="background-color:#B9FEB9; padding:2em; margin-top: 1em" class="fragment">
+            The secondary structure of VemP in the ribosome tunnel
+            is driven by the tunnel, simulations and CD spectroscopy suggests.
+        </div>
+    </div>
+</section>
+
+
+<section style="text-align: left">
+    <div class="leftcol" style="width:58%; margin-top: 0.5em">
+        <h4>Decoding of non-standard genetic code</h4>
+        <p>
+            M. Eliáš group (University of Ostrava)
+        </p>
+        <p>
+            Why does the stop-codon UAG decodes glutamine in certain flagellate?
+        </p>
+        <div style="background-color:#B9FEB9; padding:2em; margin-top: 1.5em;" class="fragment">
+           The stop-to-sense re-assignemnt can be explained by sequence divergence of 
+           the flagellate's release factor. 
+        </div>
+    </div>
+    <div class="rightcol" style="width: 40%">
+        <img src="./media/decoding/decoding.png">
+    </div>
+</section>
+
+
+
+<section style="text-align: left">
+    <div class="leftcol" style="width:40%">
+        <img src="./media/pdf/pdf.png">
+    </div>
+    <div class="rightcol" style="width: 58%">
+        <h4 style="margin-top: 0.5em">Long-range allostery within the ribosome</h4>
+        <p>
+            H. McGrath's talk
+        </p>
+        <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/36335428/" target="_blank">PMID: 36335428</a>
+        </p>
+        <div style="background-color:#B9FEB9; padding:2em; margin-top: 3em" class="fragment">
+            From simulation data, we can construct a robust predictor of the PDF presence or absence on the ribosome surface.
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <img src="./media/poster.png">
+</section>
+
+
+<section>
+    <video width="70%" nocontrols autoplay loop style="margin-top:-3em">
+      <source data-src="./media/ribosome.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section style="text-align: left">
+    <h3>Further reading</h3>
+    
+    <p>
+        Bock, Gabrielli, Kolář, Grubmüller (2023):
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36719969" target="_blank">PMID: 36719969</a>
+    </p>
+
+    <p>
+        Bock, Kolář, Grubmüller (2018):
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29202442" target="_blank">PMID: 29202442</a>
+    </p>
+    
+    <p>
+        Kolář (2022): Kotranslační děje aneb první okamžiky života proteinu,
+        <a href="http://chemicke-listy.cz/ojs3/index.php/chemicke-listy/article/view/3941" target="_blank">Chemické listy</a>
+    </p>
+
+    <h4 style="margin-top: 5em"><a href="http://mhko.science/contact" target="_blank">http://mhko.science/contact</a></h4>
+    <h4><a href="http://mhko.science/cssb-2023" target="_blank">http://mhko.science/cssb-2023</a></h4>
+</section>
+
+
+<section>
+</section>
+
+
+
+<section>
+    <img src="./media/vemp-anchor-struct.png">
+</section>
+
+
+<!--
+============ SLIDES END HERE ============
+-->
+            </div>
+        </div>
+
+		<script src="dist/reveal.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                autoPlayMedia: true,
+                controls: false,
+                progress: true, 
+                slideNumber: true,
+                transition: 'none', 
+                backgroundTransition: 'none',
+                center: false,
+			});
+		</script>
+	</body>
+</html>
+        
